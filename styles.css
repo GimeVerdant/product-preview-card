@@ -147,10 +147,17 @@ h2 {
   flex-shrink: 0;
 }
 
-.add-to-cart:hover,.add-to-cart:focus {
+
+.add-to-cart:hover {
   background-color: var(--color-green-700);
 }
 
+/* Only show outline for keyboard navigation */
+.add-to-cart:focus-visible {
+  background-color: var(--color-green-700);
+  outline: 2px solid var(--color-green-700);
+  outline-offset: 2px;
+}
 
 /* ==================== */
 /*    MEDIA QUERIES     */
